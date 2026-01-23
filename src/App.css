@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "StyleFont";
+  src: url("../fonts/Roxborough.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+:root {
+  /* Core Colors */
+  --pure-black: #000000;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #121212;
+  --bg-card: #1c1c1c;
+
+  --main: #de2c2c;
+  --main-dark: #8b1c1c;
+  --main-light: #ff4d4d;
+
+  /* Opacity Variants */
+  --main-opacity: rgba(222, 44, 44, 0.8);
+  --mid-opacity: rgba(222, 44, 44, 0.4);
+  --light-opacity: rgba(222, 44, 44, 0.1);
+
+  /* Typography & UI */
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-red: rgba(222, 44, 44, 0.3);
+
+  /* Shared Variables */
+  --style-font: "StyleFont", cursive;
+  --section-px: 100px;
+  --card-transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* IMPORTANT: remove Vite default root constraints */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Encode Sans", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Updated Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}
+
+/* Global Link Styling */
+a {
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--main);
+}
