@@ -1,11 +1,5 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-@font-face {
-  font-family: "StyleFont";
-  src: url("../fonts/Roxborough.ttf");
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
@@ -32,7 +26,6 @@
   --border-red: rgba(222, 44, 44, 0.3);
 
   /* Shared Variables */
-  --style-font: "StyleFont", cursive;
   --section-px: 100px;
   --card-transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
