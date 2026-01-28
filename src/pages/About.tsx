@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Trending from "../components/news/Trending";
-import postImg from "../assets/images/main-bg.jpg";
+import postImg from "../assets/images/main-bg.png";
 import { Search } from "lucide-react";
 
 type TrendingData = {

@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
   /* Core Colors */
@@ -25,12 +23,27 @@
   --border-color: rgba(255, 255, 255, 0.08);
   --border-red: rgba(222, 44, 44, 0.3);
 
-  /* Shared Variables */
-  --section-px: 100px;
+  /* Responsive spacing */
+  --section-px: 1rem;
+
   --card-transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* IMPORTANT: remove Vite default root constraints */
+/* Tablet */
+@media (min-width: 640px) {
+  :root {
+    --section-px: 2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  :root {
+    --section-px: 100px;
+  }
+}
+
+/* Reset Vite defaults */
 #root {
   width: 100%;
   margin: 0;
@@ -52,7 +65,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Updated Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -70,7 +83,7 @@ body {
   background: var(--main);
 }
 
-/* Global Link Styling */
+/* Links */
 a {
   color: var(--text-primary);
   transition: all 0.3s ease;

@@ -3,8 +3,8 @@ import { useState, useEffect, useMemo } from "react";
 import Post from "../components/news/Post";
 import Trending from "../components/news/Trending";
 
-import postImg from "../assets/images/main-bg.jpg";
-import bgImage from "../assets/images/main-bg.jpg";
+import postImg from "../assets/images/main-bg.png";
+import bgImage from "../assets/images/main-bg.png";
 
 import { Search } from "lucide-react";
 
@@ -115,11 +115,11 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 w-full px-[var(--section-px)] text-center">
-          <h1 className="uppercase font-[var(--style-font)] text-white tracking-tighter leading-[0.75] text-[3rem] md:text-[4rem] lg:text-[6rem]">
+          <h1 className="uppercase font-[var(--style-font)] text-white tracking-tighter leading-[0.9] text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[6rem]">
             {slides[currentSlide].title}
           </h1>
 
-          <p className="font-black uppercase mt-3 tracking-[0.6em] md:tracking-[0.8em] text-xs md:text-md">
+          <p className="font-black uppercase mt-4 tracking-[0.3em] sm:tracking-[0.5em] md:tracking-[0.8em] text-[0.6rem] sm:text-xs md:text-sm">
             {slides[currentSlide].subtitle}
           </p>
         </div>
@@ -144,8 +144,8 @@ const Home = () => {
       {/* Posts & Trending */}
       <section className="w-full bg-[var(--bg-primary)] py-[100px]">
         <div className="w-full px-[var(--section-px)]">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-            <div className="lg:col-span-2 flex flex-col gap-14 bg-[var(--bg-secondary)] p-10">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <div className="lg:col-span-2 flex flex-col gap-14 bg-[var(--bg-secondary)] p-6 sm:p-8 lg:p-10">
               <div>
                 <h3 className="text-sm md:text-md font-[var(--style-font)] uppercase tracking-tight bg-[var(--main)] inline-block px-4 py-2">
                   Latest Articles
@@ -177,7 +177,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="hidden lg:flex lg:col-span-1 flex-col gap-10 bg-[var(--bg-secondary)] p-10 h-fit">
+            <div className="flex lg:col-span-1 flex-col gap-10 bg-[var(--bg-secondary)] p-6 sm:p-8 lg:p-10 h-fit">
               <div className="flex flex-col gap-5">
                 <h3 className="text-sm md:text-md font-[var(--style-font)] uppercase tracking-tight bg-[var(--main)] inline-block px-4 py-2 w-fit">
                   Trending
