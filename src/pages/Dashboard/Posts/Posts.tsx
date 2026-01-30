@@ -9,7 +9,7 @@ import {
   deleteDoc,
   doc,
 } from "firebase/firestore";
-import { Trash2, Plus } from "lucide-react";
+import { Trash2 } from "lucide-react";
 
 const AdminPosts = () => {
   const [posts, setPosts] = useState<any[]>([]);
